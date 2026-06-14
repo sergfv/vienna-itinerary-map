@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Carlos in Vienna — 12–18 June 2026</title>
+  <meta name="description" content="Travel itinerary map: art, imperial history and Pride week in Vienna." />
+  <meta name="theme-color" content="#faf9f5" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Vienna" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="topbar">
+    <div class="top-row">
+      <div class="top-titles">
+        <h1>Carlos in Vienna</h1>
+        <p id="day-summary">12–18 June 2026</p>
+      </div>
+      <div class="top-actions">
+        <button id="walk-btn" class="icon-btn" type="button" aria-label="Walking mode" aria-pressed="false"></button>
+        <button id="new-btn" class="icon-btn" type="button" aria-label="Make your own itinerary"></button>
+        <button id="list-toggle" class="icon-btn" type="button" aria-label="Open itinerary list" aria-expanded="false"></button>
+      </div>
+    </div>
+    <nav id="daybar" aria-label="Filter by day"></nav>
+    <button id="walkbar" class="walkbar" type="button" hidden></button>
+  </header>
+
+  <div id="map" role="application" aria-label="Itinerary map"></div>
+
+  <button id="locate" class="map-fab" type="button" aria-label="Show my location"></button>
+
+  <section id="sheet" class="sheet" aria-live="polite" hidden></section>
+
+  <aside id="listview" class="listview" hidden aria-label="Full itinerary"></aside>
+
+  <div id="lightbox" class="lightbox" hidden role="dialog" aria-label="Photo viewer"></div>
+
+  <section id="importscreen" class="importscreen" hidden aria-label="Make your own itinerary"></section>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="lz-string.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

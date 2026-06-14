@@ -1,0 +1,16 @@
+{
+  "name": "Carlos in Vienna — 12–18 June 2026",
+  "short_name": "Vienna",
+  "description": "Travel itinerary map: art, imperial history and Pride week in Vienna.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1d3557",
+  "theme_color": "#1d3557",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
